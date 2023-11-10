@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Historia Interactiva</title>
+</head>
+<body>
+    
+
+    <div id="story-container">
+        <img id="story-image" src="" alt="Imagen">
+        <p id="story-text">¡Comienza tu aventura!</p>
+        
+        <div class="story-buttons">
+            <button id="btn-prev" class="story-button" onclick="prevPage()">Anterior</button>
+            <button id="btn-next" class="story-button" onclick="nextPage()">Siguiente</button>
+            <button id="btn-hablar" class="story-button" style="display: none;" onclick="hablarConLaBallena()">Hablar con la ballena</button>
+            <button id="btn-nadar" class="story-button" style="display: none;" onclick="seguirNadando()">Seguir nadando</button>
+            <button id="btn-restart" class="story-button" style="display: none;" onclick="volverAJugar()">Volver a jugar</button>
+            <button id="btn-choice1" class="story-button" onclick="makeChoice(1)" style="display: none;"></button>
+            <button id="btn-choice2" class="story-button" onclick="makeChoice(2)" style="display: none;"></button>
+            
+        <div id="page-7-options" style="display: none;">
+             <p>¿Qué debería hacer el cangrejo?</p>
+                 <button id="btn-escapar-ave" onclick="escaparDelAve()">Escapar del ave</button>
+                 <button id="btn-llevar-ave" onclick="dejarseLlevarPorElAve()">Dejarse llevar por el ave</button>
+        </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+   
+        /* Establece la imagen como fondo */
+        background: url('https://th.bing.com/th/id/R.b92db8a0427ca9fdaede9a3a39443d81?rik=8eMNp02LML3WyA&riu=http%3a%2f%2fimagenes.4ever.eu%2fdata%2fdownload%2fnaturaleza%2farena-198553.jpg&ehk=DAHZp4nGAVYil%2b4Uf6OydSrYY5ZjR7T147LapFJsnlk%3d&risl=&pid=ImgRaw&r=0') no-repeat center center fixed;
+        
+        /* Ajusta la propiedad de tamaño de la imagen de fondo */
+        background-size: cover;
+
+        /* Establece un color de fondo como respaldo si la imagen no está disponible */
+        background-color: #cccccc
+}
+
+#story-image,
+#story-text {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#story-container {
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#story-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.story-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.story-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#btn-prev, #btn-next {
+    display: inline-block;
+}
+
+#btn-volver-jugar {
+    display: none;
+}
